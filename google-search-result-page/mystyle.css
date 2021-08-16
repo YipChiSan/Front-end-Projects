@@ -1,6 +1,16 @@
 #google-logo {
     height: 70px;
     width: 108px;
+}
+
+#search-bar {
+    height: 50px;
+    width: 500px;
+
+}
+
+#top-area {
+    display: flex;
     margin-left: 10px;
-    margin-top: 6px;
+    margin-top: 15px;
 }
