@@ -4,6 +4,7 @@
 
     <head>
         <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>build this webpage - Google Search</title>
     </head>
 
@@ -13,10 +14,16 @@
         </body>
 
         <form>
-            <input type="text" id="search-bar" name="keyword" value="build this webpage"><br>
+            <div id="search-bar">
+                <i class="fa fa-times" id="clear-icon"></i>
+                <input type="text" id="search-bar-text" name="keyword" value="build this webpage">
+                
+            </div>
         </form>
-    </div>
 
+        
+    </div>
+    
     <ul>
         <li>All</li>
         <li>News</li>

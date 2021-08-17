@@ -3,14 +3,28 @@
     width: 108px;
 }
 
-#search-bar {
+#search-bar{
+    text-align: center;
+}
+
+
+#search-bar-text {
     height: 40px;
     width: 600px;
     margin-left: 35px;
     margin-top: 15px;
+    padding-right: 25px;
+    padding-left: 15px;
+    padding-top: 0px;
     border-radius: 20px;
     font-size: 15px;
+}
 
+#clear-icon {
+   
+   position: absolute;
+   float: right;
+   
 }
 
 #top-area {
