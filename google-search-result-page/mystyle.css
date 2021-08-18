@@ -87,3 +87,15 @@
     border: none;
     border-radius: 5px;
 }
+
+.label {
+    display: none;
+    background-color: #595959;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.label:hover {
+    display: block;
+}
