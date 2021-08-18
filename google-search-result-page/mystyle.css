@@ -59,7 +59,7 @@
     font-size: 25px;
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    width: 170px;
 }
 
 .ending-icon {
@@ -67,7 +67,8 @@
 }
 
 #sign-in-button {
-    
+    background-color: #1c74ec;
+    color: white;
     height: 35px;
     width: 80px;
     text-align: center;
