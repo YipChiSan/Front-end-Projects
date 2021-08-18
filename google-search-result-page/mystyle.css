@@ -94,8 +94,14 @@
     text-align: center;
     border: none;
     border-radius: 5px;
+    font-size: 11px;
+    
+    padding: 0.3rem;
+    color: white;
+    white-space: nowrap;
+    width: 5em;
 }
 
-.label:hover {
-    display: block;
+.icon-container:hover .label {
+    display: flex;
 }
