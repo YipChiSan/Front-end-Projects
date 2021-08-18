@@ -10,7 +10,7 @@
 
 #search-bar-text {
     height: 40px;
-    width: 600px;
+    width: 650px;
     margin-left: 35px;
     margin-top: 15px;
     padding-right: 25px;
@@ -22,16 +22,23 @@
 
 #clear-icon {
     position: absolute;
-    right: 48px;
+    right: 60px;
     top: 25px;
     color: gray;
+}
+
+#search-icon {
+    position: absolute;
+    right: 18px;
+    top: 25px;
+    color: #4989f4;
 }
 
 #vertical-line-icon {
     border-left: 1px solid gray;
     height: 25px;
     position: absolute;
-    right: 35px;
+    right: 50px;
     top: 25px;
     opacity: 0.3;
 }
