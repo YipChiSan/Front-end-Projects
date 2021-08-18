@@ -4,7 +4,8 @@
 }
 
 #search-bar{
-    text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 
@@ -21,10 +22,9 @@
 }
 
 #clear-icon {
-   
-   position: absolute;
-   float: right;
-   
+    position: absolute;
+    right: 50px;
+    top: 25px;
 }
 
 #top-area {
