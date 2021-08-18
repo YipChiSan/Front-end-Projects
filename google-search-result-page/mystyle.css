@@ -53,17 +53,25 @@
 
 #ending-icons {
     margin-top: 20px;
-    padding-right: 25px;
+    margin-right: 60px;
     margin-left: auto;
     color: gray;
-    font-size: 25px;
+    font-size: 32px;
     display: flex;
     justify-content: space-between;
-    width: 170px;
+    width: 200px;
 }
 
-.ending-icon {
-    padding-top: 5px;
+.icon-container {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%; 
+    width: 38px;
+    height: 38px;
+}
+
+.icon-container:hover {
+    background-color: #f2f2f2;
 }
 
 #sign-in-button {
