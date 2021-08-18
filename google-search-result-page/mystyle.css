@@ -52,13 +52,25 @@
 }
 
 #ending-icons {
-    padding-top: 15px;
+    margin-top: 20px;
     padding-right: 25px;
     margin-left: auto;
     color: gray;
     font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
 }
 
-#setting-icon {
-    padding-right: 10px;
+.ending-icon {
+    padding-top: 5px;
+}
+
+#sign-in-button {
+    
+    height: 35px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
 }
