@@ -8,7 +8,6 @@
     display: inline-block;
 }
 
-
 #search-bar-text {
     height: 40px;
     width: 600px;
@@ -23,8 +22,18 @@
 
 #clear-icon {
     position: absolute;
-    right: 50px;
+    right: 48px;
     top: 25px;
+    color: gray;
+}
+
+#vertical-line-icon {
+    border-left: 1px solid gray;
+    height: 25px;
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    opacity: 0.3;
 }
 
 #top-area {
