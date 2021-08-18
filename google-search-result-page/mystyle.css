@@ -50,3 +50,15 @@
     margin-left: 10px;
     margin-top: 15px;
 }
+
+#ending-icons {
+    padding-top: 15px;
+    padding-right: 25px;
+    margin-left: auto;
+    color: gray;
+    font-size: 25px;
+}
+
+#setting-icon {
+    padding-right: 10px;
+}
