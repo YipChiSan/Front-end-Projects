@@ -68,6 +68,7 @@
     border-radius: 50%; 
     width: 38px;
     height: 38px;
+    position: relative;
 }
 
 #apps-icon {
@@ -95,11 +96,21 @@
     border: none;
     border-radius: 5px;
     font-size: 11px;
-    
     padding: 0.3rem;
+    top: 42px;
+    left: 100%;
+    position: absolute;
     color: white;
     white-space: nowrap;
-    width: 5em;
+    width: max-content;
+}
+
+#settings-label {
+    transform: translateX(-83%);
+}
+
+#apps-label {
+    transform: translateX(-72%);;
 }
 
 .icon-container:hover .label {
