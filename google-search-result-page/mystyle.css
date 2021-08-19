@@ -118,9 +118,23 @@
 }
 
 ul {
+    position: relative;
     list-style-type: none;
+    display: flex;
+    width: 23%;
+    left: 130px;
 }
 
 ul li {
-    display: inline-block;
+    display: flex;
+    
+    width: 15%;
+    position: relative;
+}
+
+.menu-labels {
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    font-size: 13px;
 }
