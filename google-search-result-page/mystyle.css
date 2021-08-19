@@ -127,8 +127,7 @@ ul {
 
 ul li {
     display: flex;
-    
-    width: 15%;
+    width: 13%;
     position: relative;
 }
 
@@ -137,4 +136,20 @@ ul li {
     left: 30px;
     top: 5px;
     font-size: 13px;
+}
+
+#maps-label {
+    left: 25px;
+}
+
+#more-icon {
+    transform: translateX(50%);
+}
+
+#more-tap {
+    left: 20px;
+}
+
+#tool-label {
+    left: 180px;
 }
