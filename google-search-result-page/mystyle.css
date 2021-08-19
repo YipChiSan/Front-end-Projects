@@ -116,3 +116,8 @@
 .icon-container:hover .label {
     display: flex;
 }
+
+li {
+    display: inline-block;
+}
+
