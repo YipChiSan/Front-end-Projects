@@ -185,3 +185,27 @@ body {
     font-size: small;
     color: grey;
 }
+
+.search-result {
+    left: 170px;
+    position: relative;
+    top: 15px;
+}
+
+.url {
+    font-size: 13px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.description {
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 2%;
+}
