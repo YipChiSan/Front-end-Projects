@@ -178,3 +178,10 @@ ul li {
 body {
     margin: 0;
 }
+
+#number-of-results {
+    left: 170px;
+    position: relative;
+    font-size: small;
+    color: grey;
+}
