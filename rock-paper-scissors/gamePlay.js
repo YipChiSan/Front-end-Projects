@@ -100,4 +100,55 @@ function game() {
     }
 }
 
-game();
+function createElement(type, name, text=null) {
+    let display = document.createElement(type);
+    display.setAttribute("id", name);
+    display.innerHTML = text;
+    document.body.appendChild(display);
+}
+
+function updateScore(elementID) {
+    let score = document.getElementById(elementID).textContent;
+    let scoreInt = parseInt(score) + 1;
+    document.getElementById(elementID).textContent = scoreInt;
+}
+
+
+function optionBtnClick(playerSelection) {
+
+    if (document.getElementById("roundNumber").textContent < "5") {
+        let computerSelection = computerPlay();
+        let result = round(playerSelection, computerSelection);
+        let winPattern = /^You won/i;
+        let losePattern = /^You lost/i;
+        if (winPattern.test(result)) {
+            updateScore("playerScore");
+            updateScore("roundNumber");
+            document.getElementById("displayMessage").textContent = result + '<br/>';
+        } else if (losePattern.test(result)) {
+            updateScore("computerScore");
+            updateScore("roundNumber");
+            document.getElementById("displayMessage").textContent = result + '<br/>';
+        } else {
+            updateScore("roundNumber");
+            document.getElementById("displayMessage").textContent = result + '<br/>';
+        }
+        if (document.getElementById("roundNumber").textContent === "5") {
+            if (document.getElementById("playerScore").textContent > document.getElementById("computerScore").textContent) {
+                document.getElementById("displayMessage").textContent += "You win the game.";
+            } else if (document.getElementById("playerScore").textContent < document.getElementById("computerScore").textContent) {
+                document.getElementById("displayMessage").textContent += "You lose the game.";
+            } else {
+                document.getElementById("displayMessage").textContent += "You are tied.";
+            }   
+    }
+    }
+}
+
+function restartBtnClick() {
+    document.getElementById("playerScore").textContent = "0";
+    document.getElementById("computerScore").textContent = "0";
+    document.getElementById("roundNumber").textContent = "0";
+    document.getElementById("displayMessage").textContent = "What is your choice: Paper, Rock or Scissors?";
+}
+
