@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>
+            Paper, Rock, Scissors
+        </title>
+        <script src="gamePlay.js" defer>
+
+        </script>
+
+    </head>
     <body>
+        <div id="mainContainer">
+            <div id="playerScoreContainer">
+                <div id="playerScoreLabel">
+                    Player: 
+                </div>
+                <div id="playerScore">
+                    0
+                </div>
+            </div>
 
-    <script src="gamePlay.js">
+            <div id="computerScoreContainer">
+                <div id="computerScoreLabel">
+                    Computer: 
+                </div>
+                <div id="computerScore">
+                    0
+                </div>
+            </div>
 
-    </script>
+            <div id="roundNumberContainer">
+                <div id="roundNumberLabel">
+                    Round: 
+                </div>
+                <div id="roundNumber">
+                    0
+                </div>
+            </div>
+
+            <div id="displayMessage">
+                What is your choice: Paper, Rock or Scissors?<br>
+            </div>
+
+            <div id="resultMessage">
+                &nbsp;
+            </div>
+
+            <button type="button" id="restartBtn">Restart</button>
+            <div id="optionBtnContainer">
+                <button type="button" id="rock">Rock</button>
+                <button type="button" id="paper">Paper</button>
+                <button type="button" id="scissors">Scissors</button>
+            </div>
+        </div>
+    
     </body>
 
 </html>
