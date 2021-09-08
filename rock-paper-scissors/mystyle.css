@@ -1,0 +1,14 @@
+
+
+#mainContainer {
+    font-size: large;
+    
+}
+
+#playerScoreContainer, #computerScoreContainer, #roundNumberContainer {
+    display: flex;
+}
+
+#restartBtn {
+    margin-bottom: 1%;
+}
