@@ -1,0 +1,66 @@
+body {
+    background-color: #483D8B;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+    body::before {
+        content: "";
+        background-image: url("image/survey-form-background.jpeg");
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.2;
+    }
+
+#header-title {
+    
+    color: white;
+    font-size: 36px;
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#header-caption {
+    font-style: italic;
+    
+    color: white;
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-body {
+    border-radius: 10px;
+    margin-top: 1.2em;
+    background-color: #121023;
+    opacity: 0.8;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+
+#name, #email, #age, #role, #feature, #submit {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px;
+}
+
+#comments {
+    border-radius: 1px;
+    border: 1px;
+    width: 100%;
+}

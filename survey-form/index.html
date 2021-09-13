@@ -4,11 +4,11 @@
         <title>
             Survey Form
         </title>
-
+        <link rel="stylesheet" href="mystyle.css" />
     </head>
 
     <body>
-        <div>
+        <div id="main-container">
             <div id="header-title">
                 freeCodeCamp Survey Form
             </div>
@@ -22,22 +22,22 @@
                     <label for="name">
                         Name
                     </label><br />
-                    <input type="text" id="name" name="name" placeholder="Enter your name" /><br />
+                    <input type="text" id="name" name="name" placeholder="Enter your name" /><br /><br />
 
                     <label for="email">
                         Email
                     </label><br />
-                    <input type="email" id="email" name="email" placeholder="Enter your email" /><br />
+                    <input type="email" id="email" name="email" placeholder="Enter your email" /><br /><br />
 
                     <label for="age">
                         Age(optional)
                     </label><br />
-                    <input type="number" id="age" name="age" placeholder="Age" /><br />
+                    <input type="number" id="age" name="age" placeholder="Age" /><br /><br />
 
                     <label for="role">
                         Which option best describes your current role?
                     </label><br />
-                    <select>
+                    <select id="role">
                         <option selected disabled>Select current role</option>
                         <option>Student</option>
                         <option>Full time job</option>
@@ -45,7 +45,7 @@
                         <option>Prefer not to say</option>
                         <option>Others</option>
                     </select>
-                    <br />
+                    <br /><br />
 
                     <label>Would you recommend freeCodeCamp to a friend?</label><br />
                     <input type="radio" id="definitely" name="attitude" value="definitely">
@@ -54,19 +54,19 @@
                     <label for="maybe">Maybe</label><br />
                     <input type="radio" id="not-sure" name="attitude" value="not-sure">
                     <label for="not-sure">Not sure</label>
-                    <br />
+                    <br /><br />
 
                     <label for="feature">
                         What is your favorite feature of freeCodeCamp?
                     </label><br />
-                    <select>
+                    <select id="feature">
                         <option selected disabled>Select an option</option>
                         <option>Challenges</option>
                         <option>Projects</option>
                         <option>Community</option>
                         <option>Open source</option>
                     </select>
-                    <br />
+                    <br /><br />
 
                     <label>What would you like to see improved? (Check all that apply)</label><br />
                     <input type="checkbox" id="improvement1" name="improvement1" value="front-end-projects">
@@ -90,12 +90,12 @@
                     <input type="checkbox" id="improvement10" name="improvement10" value="forum">
                     <label for="improvement10"> Forum</label><br>
                     <input type="checkbox" id="improvement11" name="improvement11" value="additional-courses">
-                    <label for="improvement11"> Additional Courses</label><br>
+                    <label for="improvement11"> Additional Courses</label><br><br />
 
                     <label for="comments">Any comments or suggestions?</label><br />
-                    <textarea form="comments" id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br />
+                    <textarea form="comments" id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br /><br />
 
-                    <input type="submit" value="Submit" />
+                    <input type="submit" id="submit" value="Submit" />
                 </form>
             </div>
             
