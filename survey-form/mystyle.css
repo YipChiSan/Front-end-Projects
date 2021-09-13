@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #483D8B;
 }
@@ -7,16 +9,18 @@ body {
     flex-direction: column;
 }
 
-    body::before {
-        content: "";
-        background-image: url("image/survey-form-background.jpeg");
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0.2;
-    }
+body::before {
+    content: "";
+    background-image: url("image/survey-form-background.jpeg");
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: top center;
+}
 
 #header-title {
     
