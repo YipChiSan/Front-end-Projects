@@ -36,9 +36,40 @@ a {
     color: black;
 }
 
-#title-section, #features, #how-it-works, #pricing, #footer {
+#button {
+    display:block;
+}
+
+#title, #form, #features, #how-it-works, #pricing, #footer, #start-button {
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 0.8em;
+    font-weight: bold; 
+}
+
+form > input {
+    margin-bottom: 1em;
+    width: 220px;
+    padding: 0.4em;
+    
+}
+
+#start-button {
+    background-color: yellow;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    font-weight: bolder;
+}
+
+#start-button:hover {
+    background-color: orange;
+    cursor:pointer;
 }
 
 @media screen and (max-width: 700px) {
