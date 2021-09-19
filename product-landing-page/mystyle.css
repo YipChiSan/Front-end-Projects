@@ -43,7 +43,6 @@ a {
 #title, #form, #features, #how-it-works, #pricing, #footer, #start-button {
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 #title {
@@ -65,12 +64,48 @@ form > input {
     padding: 5px;
     border: none;
     font-weight: bolder;
+    margin-bottom: 4em;
 }
 
 #start-button:hover {
     background-color: orange;
     cursor:pointer;
 }
+
+#features {
+    width: 90%;
+}
+
+#features > li {
+    list-style: none;
+    margin-left: 1em;
+    display: flex;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-between;
+}
+
+.content {
+    width: 85%;
+
+}
+
+.feature-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.feature-description {
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+i {
+    color: orange;
+}
+
 
 @media screen and (max-width: 700px) {
     #top-nav-list {
@@ -109,6 +144,32 @@ form > input {
         height: auto;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #features > li {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #features {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .feature-title {
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     
