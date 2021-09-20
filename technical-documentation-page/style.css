@@ -6,4 +6,5 @@ body {
 #nav-bar {
     position: sticky;
     height: min-content;
+    top: 0;
 }
