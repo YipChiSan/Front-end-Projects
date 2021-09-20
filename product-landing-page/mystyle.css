@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction:column;
+    margin: 0;
 }
 
 
@@ -110,7 +111,8 @@ i {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    
     margin-top: 4em;
     
 }
@@ -126,20 +128,42 @@ i {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.7em;
     }
 
 .item-name {
-    font-size: 20px;
+    font-size: 16px;
     font-weight:500;
     width: 100%;
     text-align: center;
     background-color: gainsboro;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
 }
 
 .price {
     font-size: 24px;
     font-weight: bold;
+}
+
+.select-button {
+    max-width: 100px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 17px;
+    border: none;
+    background-color:yellow;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+.select-button:hover {
+    background-color: orange;
+    cursor: pointer;
 }
 
 
@@ -155,6 +179,17 @@ i {
     #top-nav-list > li {
         font: 16px;
         padding: 0.3em;
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+
+    .pricing-item {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        margin-bottom: 2em;
     }
 }
 
