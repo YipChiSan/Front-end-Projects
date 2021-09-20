@@ -132,7 +132,8 @@ i {
 .item-name {
     font-size: 20px;
     font-weight:500;
-    padding-left: auto;
+    width: 100%;
+    text-align: center;
     background-color: gainsboro;
 }
 
