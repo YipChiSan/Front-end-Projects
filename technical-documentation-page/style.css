@@ -5,6 +5,13 @@ body {
 
 #nav-bar {
     position: sticky;
-    height: min-content;
+    height: 100vh;
     top: 0;
+    border-right: 1px solid;
+}
+
+#nav-bar > p {
+    width: 230px;
+    padding-left: 30px;
+    border-bottom: 1px solid;
 }
