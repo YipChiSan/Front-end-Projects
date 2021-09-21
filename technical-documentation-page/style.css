@@ -10,16 +10,16 @@ body {
     border-right: 1px solid;
 }
 
-#nav-bar > a {
-    display:block;
-    width: 240px;
-    height: 35px;
-    padding-top: 15px;
-    padding-left: 30px;
-    border-bottom: 1px solid;
-    text-decoration: none;
-    color: black;
-}
+    #nav-bar > a {
+        display:block;
+        width: 240px;
+        height: 35px;
+        padding-top: 15px;
+        padding-left: 30px;
+        border-bottom: 1px solid;
+        text-decoration: none;
+        color: black;
+    }
 
     #nav-bar > p {
         font-size: 30px;
@@ -29,4 +29,13 @@ body {
         margin-bottom: 0;
         margin-top: 0;
         border-bottom: 1px solid;
+    }
+
+#doc-body {
+    padding-left: 30px;
+    
+}
+
+    #doc-body > p, #doc-body > code {
+        padding-left: 10px;
     }
