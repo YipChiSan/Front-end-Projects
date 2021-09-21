@@ -33,9 +33,21 @@ body {
 
 #doc-body {
     padding-left: 30px;
-    
+    width: 80%;
+    font-size: 16px;
 }
 
-    #doc-body > p, #doc-body > code {
+    #doc-body > p {
         padding-left: 10px;
     }
+
+code {
+    display: block;
+    margin-left: 10px;
+    padding-left: 15px;
+    width: 95%;
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
