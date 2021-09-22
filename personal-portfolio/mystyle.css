@@ -52,3 +52,125 @@ body {
         color: orangered;
         font-size: 40px;
     }
+
+#work {
+    background-color: #205d73;
+    padding-bottom: 70px;
+}
+
+
+
+#work > p:first-of-type {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-size: 46px;
+    border-bottom: 3px solid;
+    color: white;
+    margin-top: 0;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+    .product > p {
+        text-align: center;
+        background-color: #051e27;
+        
+        color: white;
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .product > img:hover + p::before {
+        content: "< ";
+        color: orange;
+    }
+
+    .product > img:hover + p::after {
+        content: " />";
+        color: orange;
+    }
+
+        .product > p:hover::before {
+            content: "<";
+            color:orange;
+        }
+
+        .product > p:hover::after {
+            content: "/>";
+            color: orange;
+        }
+
+
+
+#content {
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+    #content > a {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        text-decoration: none;
+        min-width: 400px;
+    }
+
+img {
+    width: 100%;
+    height: 90%;
+    object-fit:cover;
+}
+
+button {
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    background-color: #051e27;
+    color: white;
+    border: none;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-radius: 5px;
+}
+
+    button:hover {
+        background-color: #15799e;
+        cursor:pointer;
+    }
+
+    button > p {
+        display: inline-block;
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    button:hover > p {
+        transform: translateX(3px);
+    }
+
+@media screen and (max-width: 1300px) {
+    #content > a {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #content > a {
+        width: 90%;
+    }
+}
