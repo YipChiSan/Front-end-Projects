@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+#top-nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e60000;
+    top:0;
+    position: sticky;
+    z-index: 100;
+}
+
+    #top-nav > a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    #top-nav > a:hover {
+        background-color: gray;
+    }
