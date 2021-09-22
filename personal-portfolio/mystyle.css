@@ -163,6 +163,53 @@ button {
         transform: translateX(3px);
     }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #4d4d4d;
+    height: 100vh;
+    text-align:center;
+    color: white;
+    justify-content: center;
+}
+
+#contact > p:first-of-type {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+#contact > p:nth-of-type(2) {
+    font-size: 18px;
+    font-style:italic;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+    #contact > div {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 900px;
+        justify-content: space-evenly;
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+
+#contact > div > a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact >div > a:hover {
+    transform:translateY(10px);
+    transition-duration: 0.5s;
+}
+
+#contact > div > a > p{
+    display: inline-block;
+}
+
 @media screen and (max-width: 1300px) {
     #content > a {
         width: 45%;
