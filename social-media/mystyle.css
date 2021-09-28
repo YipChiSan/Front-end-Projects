@@ -7,7 +7,6 @@ body {
     width: 100%;
     background-color: #4d636f;
     display: flex;
-    
 }
 
 #nav a {
@@ -24,11 +23,9 @@ body {
     #nav>a:hover, #notice:hover a {
         background-color: white;
         color: black;
-        
     }
 
 #notice a {
-    
     height: 50%;
 }
 
@@ -71,7 +68,6 @@ a p {
 }
 
     #notification p:hover {
-        
         background-color: #bfbfbf;
         cursor: pointer;
     }
@@ -80,11 +76,50 @@ a p {
     display: inline-block;
     margin-left: 1px;
     transform: translateY(-5px);
-    
     padding-left: 8px;
     padding-right: 8px;
     background-color: red;
     border-radius: 90%;
+}
+
+#small-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #nav {
+        display: none;
+    }
+
+    #small-nav {
+        display: initial;
+        width: 100%;
+        background-color: #4d636f;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #small-nav a {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 0.6em;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+        #small-nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+
+            
+ 
+
+    
 }
 
         
