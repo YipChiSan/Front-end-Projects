@@ -88,7 +88,7 @@ a p {
 
 #main-body {
     display: grid;
-    grid-template-columns:[first] 10% [line2] 20% [line3] 45% [line4] 10% [line5] 10% [end];
+    grid-template-columns:[first] 12% [line2] 18% [line3] 45% [line4] 10% [line5] 10% [end];
     margin-top: 20px;
     column-gap: 15px;
 }
@@ -147,7 +147,7 @@ a p {
     margin-right: 8%;
 }
 
-#profile-content > ul {
+#profile-content ul {
     padding-left: 0;
     list-style:none;
     margin-bottom: 0;
@@ -156,14 +156,45 @@ a p {
 }
 
 li > p {
-    margin-left: 5px;
+    margin-left: 0.8em;
     display: inline-block;
     margin-bottom:0.3em;
 }
 
+#my-buttons-section {
+    margin:0;
+    padding:0;
+}
 
-@media only screen and (max-width: 700px) {
-    #nav {
+    #my-buttons-section > ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+        background-color: #4d636f;
+        color:white;
+    }
+
+    #my-buttons-section > ul > li {
+        padding-left: 15px;
+    }
+
+    li > i {
+        width: 16px;
+    }
+
+    #my-buttons-section > ul > li > p {
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+    }
+
+#my-buttons-section > ul > li:hover {
+    background-color: #b3b3b3;
+    color: black;
+    cursor: pointer;
+}
+
+    @media only screen and (max-width: 700px) {
+        #nav {
         display: none;
     }
 
