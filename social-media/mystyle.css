@@ -88,8 +88,23 @@ a p {
 
 #main-body {
     display: grid;
-    grid-template-columns:[first] 30% [line2] 50% [line3] 20% [end];
-    column-gap: 10px;
+    grid-template-columns:[first] 10% [line2] 15% [line3] 45% [line4] 15% [line5] 10% [end];
+    column-gap: 15px;
+}
+
+#left-col {
+    grid-column-start: line2;
+    grid-column-end: line3;
+}
+
+#mid-col {
+    grid-column-start: line3;
+    grid-column-end: line4;
+}
+
+#right-col {
+    grid-column-start: line4;
+    grid-column-end: line5;
 }
 
 .general-container {
@@ -102,12 +117,24 @@ a p {
     margin-bottom: 10px;
 }
 
+#profile-title {
+    width: max-content;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#profile-title > p {
+    text-align:center;
+}
+
 #profile-title > img {
     height: 90px;
     width: 90px;
     border-radius: 50%;
     display: block;
 }
+
+
 
 @media only screen and (max-width: 700px) {
     #nav {
