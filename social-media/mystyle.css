@@ -88,7 +88,8 @@ a p {
 
 #main-body {
     display: grid;
-    grid-template-columns:[first] 10% [line2] 15% [line3] 45% [line4] 15% [line5] 10% [end];
+    grid-template-columns:[first] 10% [line2] 20% [line3] 45% [line4] 10% [line5] 10% [end];
+    margin-top: 20px;
     column-gap: 15px;
 }
 
@@ -115,6 +116,11 @@ a p {
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+#profile-section {
+    padding-left: 0;
 }
 
 #profile-title {
@@ -129,15 +135,15 @@ a p {
 }
 
 #profile-title > img {
-    height: 90px;
-    width: 90px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     display: block;
 }
 
 #profile-content {
     border-top: 1px solid grey;
-    margin-left: 8%;
+    margin-left: 15px;
     margin-right: 8%;
 }
 
