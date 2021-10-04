@@ -88,7 +88,7 @@ a p {
 
 #main-body {
     display: grid;
-    grid-template-columns:[first] 25% [line2] 58% [line3] 15% [end];
+    grid-template-columns:[first] 25% [line2] 57% [line3] 16% [end];
     margin-top: 20px;
     column-gap: 15px;
     width: 97%;
@@ -324,8 +324,33 @@ input {
     width: 100%;
 }
 
-    @media only screen and (max-width: 700px) {
-        #nav {
+#right-col > div {
+    padding-left:0;
+}
+
+#upcoming-event-section > p {
+    text-align: center;
+}
+
+#upcoming-event-section > img {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-name {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.event-button {
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+}
+
+@media only screen and (max-width: 700px) {
+    #nav {
         display: none;
     }
 
@@ -351,12 +376,6 @@ input {
             background-color: white;
             color: black;
         }
-
-
-
-            
- 
-
     
 }
 
