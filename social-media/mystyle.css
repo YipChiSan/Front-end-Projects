@@ -88,24 +88,13 @@ a p {
 
 #main-body {
     display: grid;
-    grid-template-columns:[first] 12% [line2] 18% [line3] 45% [line4] 10% [line5] 10% [end];
+    grid-template-columns:[first] 25% [line2] 58% [line3] 15% [end];
     margin-top: 20px;
     column-gap: 15px;
-}
-
-#left-col {
-    grid-column-start: line2;
-    grid-column-end: line3;
-}
-
-#mid-col {
-    grid-column-start: line3;
-    grid-column-end: line4;
-}
-
-#right-col {
-    grid-column-start: line4;
-    grid-column-end: line5;
+    width: 95%;
+    max-width: 1400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .general-container {
