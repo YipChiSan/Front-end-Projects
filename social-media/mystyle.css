@@ -251,24 +251,32 @@ input {
     border: 1px solid #b3b3b3;
 }
 
-#post-section > button {
-    width: 80px;
+ .mid-col-button {
+    width: max-content;
     font-size: 15px;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-bottom: 1em;
     color: white;
     background-color: #4d636f;
     border: none;
 }
+
+    .mid-col-button:hover {
+        background-color: #b3b3b3;
+        color:black;
+        cursor: pointer;
+    }
+
 .friends-post-section {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .friends-title {
     display: flex;
-    
 }
 
 .friends-content {
@@ -300,6 +308,20 @@ input {
     margin-left: auto;
     margin-top: 0;
     color: #b3b3b3;
+}
+
+.photos-section {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.photos-section > img {
+    width: 49%;
+}
+
+.solo-photo {
+    width: 100%;
 }
 
     @media only screen and (max-width: 700px) {
