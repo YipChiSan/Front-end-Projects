@@ -44,19 +44,23 @@ nav a:hover {
 }
 
 #home {
-    height: 100vh;
+    height: 94vh;
+    top: -54px;
+    position:relative;
+    
 }
 
     #home::before {
         content: "";
         background-image: url("images/parallax1.jpg");
-        position: absolute;
-        top: 0;
+        position: fixed;
+        top: -54px;
         right: 0;
         bottom: 0;
         left: 0;
         opacity: 0.6;
         background-size: cover;
+        z-index: -1;
     }
 
     #home p {
@@ -73,6 +77,10 @@ nav a:hover {
         letter-spacing: 3px;
 
     }
+
+#about {
+    background-color: white;
+}
 
 @media only screen and (max-width: 700px) {
     .full-screen {
