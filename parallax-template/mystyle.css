@@ -212,11 +212,31 @@ nav a:hover {
 #portfolio-content img {
     width: 23.5%;
     margin-bottom: 1%;
+    opacity: 1;
 }
 
-.inside-img {
-    margin-right: 1%;
+    #portfolio-content img:hover {
+        opacity: 0.75;
+    }
+
+#portfolio-content button {
+    display: block;
+    border: none;
+    font-size: 16px;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
 }
+
+    #portfolio-content button:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    .inside-img {
+        margin-right: 1%;
+    }
 
 @media only screen and (max-width: 700px) {
     .full-screen {
