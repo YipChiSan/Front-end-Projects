@@ -238,6 +238,25 @@ nav a:hover {
         margin-right: 1%;
     }
 
+#contact {
+    margin-top: 4em;
+}
+
+#contact-title {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 40px;
+    background-image: url("images/parallax3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    opacity: 0.75;
+    letter-spacing: 10px;
+    color: white;
+}
+
 @media only screen and (max-width: 700px) {
     .full-screen {
         display: none;
