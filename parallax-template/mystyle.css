@@ -269,7 +269,7 @@ nav a:hover {
 
 #contact-body {
     max-width: 1000px;
-    
+    height: 60vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -336,6 +336,29 @@ nav a:hover {
     background-color: black;
     color: white;
     padding: 1em;
+}
+
+#footer {
+    background-color: darkgray;
+    height: 20vh;
+    display: flex;
+}
+
+#footer button {
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    padding: 1em;
+    align-self: center;
+    color: gray;
+}
+
+#footer:hover {
+    background-color: black;
+}
+
+#footer:hover button {
+    color: black;
 }
 
 @media only screen and (max-width: 700px) {
