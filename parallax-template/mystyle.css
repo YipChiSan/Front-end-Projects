@@ -86,19 +86,25 @@ nav a:hover {
 
 }
 
-    #about h2, #about > p, #about > div {
+    #about h2, #about > p, #p-with-img {
         margin-left: auto;
         margin-right: auto;
         font-size: 16px;
         max-width: 1100px;
-    
+        color: gray;
         line-height: 1.6;
     }
 
-    #p-with-img img {
-        padding-top: 1em;
-        width: 47%;
-        padding-right: 1%;
+#p-with-img img {
+    padding-top: 1em;
+    width: 47%;
+    padding-right: 1%;
+    padding-left: 1%;
+    opacity: 0.6;
+}
+
+    #p-with-img img:hover {
+        opacity: 1;
     }
 
     #p-with-img p {
@@ -107,7 +113,55 @@ nav a:hover {
         float: right;
     }
 
+#good-at-bars {
+    margin-top: 2em;
+}
 
+.bars-title {
+    font-size: 22px;
+    text-align: center;
+    color: gray;
+
+}
+
+.bar-sub-title, .base-bar {
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+}
+
+.base-bar {
+    margin-top: 1.2em;
+ 
+    background-color: #d9d9d9;
+}
+
+.bar-sub-title {
+    letter-spacing: 10px;
+    margin-bottom: 0;
+}
+
+#photography-bar, #web-bar, #photoshop-bar {
+    background-color: #666666;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    color: white;
+    text-align: center;
+}
+
+#photography-bar {
+    width: 90%;
+}
+
+#web-bar {
+    width: 85%;
+}
+
+#photoshop-bar {
+    width: 75%;
+}
 
 @media only screen and (max-width: 700px) {
     .full-screen {
