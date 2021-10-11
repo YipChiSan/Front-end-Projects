@@ -74,13 +74,40 @@ nav a:hover {
         font-size: 26px;
         color: white;
         background-color: black;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
 
     }
 
 #about {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+
 }
+
+    #about h2, #about > p, #about > div {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        max-width: 1100px;
+    
+        line-height: 1.6;
+    }
+
+    #p-with-img img {
+        padding-top: 1em;
+        width: 47%;
+        padding-right: 1%;
+    }
+
+    #p-with-img p {
+        display: inline-block;
+        width: 49%;
+        float: right;
+    }
+
+
 
 @media only screen and (max-width: 700px) {
     .full-screen {
