@@ -240,6 +240,7 @@ nav a:hover {
 
 #contact {
     margin-top: 4em;
+    color: gray;
 }
 
 #contact-title {
@@ -255,6 +256,86 @@ nav a:hover {
     opacity: 0.75;
     letter-spacing: 10px;
     color: white;
+    margin-bottom: 2em;
+}
+
+#contact > h2, #contact > p {
+    width: max-content;
+    margin-left:auto;
+    margin-right:auto;
+    width: max-content;
+    color: gray;
+}
+
+#contact-body {
+    max-width: 1000px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form {
+    display: inline-block;
+    font-size: 20px;
+    width: 65%;
+}
+
+#contact-form ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.small-icon {
+    width: 20px;
+}
+
+#contact img {
+    width: 30%;
+    margin-right: 3%;
+    margin-left: 2%;
+    max-height: 200px;
+    float: left;
+}
+
+#short-input {
+    display: flex;
+    
+    width: 100%;
+}
+
+#name {
+    margin-right: 3%;
+}
+
+#name, #email {
+    width: 46%;
+    padding-left: 0.6em;
+    font-size: 16px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+#long-input {
+    width: 100%;
+    display: flex;
+}
+
+#message {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    padding-left: 0.6em;
+    font-size: 16px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+#contact-body button {
+    float: right;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1em;
 }
 
 @media only screen and (max-width: 700px) {
