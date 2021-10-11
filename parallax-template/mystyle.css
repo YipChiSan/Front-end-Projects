@@ -174,17 +174,14 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 
-
-
 #portfolio-content {
     background-color: white;
-    
 }
 
 #portfolio-title {
-    padding-top: 5em;
-    padding-bottom: 5em;
-    font-size: 30px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 40px;
     background-image: url("images/parallax2.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -199,6 +196,15 @@ nav a:hover {
         color: white !important;
     }
 
+#portfolio-content > h2, #portfolio-content > p {
+    text-align: center;
+    color: gray;
+}
+
+    #portfolio-content > h2 {
+        padding-top: 2em;
+        font-size: 25px;
+    }
 
 @media only screen and (max-width: 700px) {
     .full-screen {
