@@ -175,7 +175,10 @@ nav a:hover {
 }
 
 #portfolio-content {
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
+    max-width: 1100px;
 }
 
 #portfolio-title {
@@ -205,6 +208,15 @@ nav a:hover {
         padding-top: 2em;
         font-size: 25px;
     }
+
+#portfolio-content img {
+    width: 23.5%;
+    margin-bottom: 1%;
+}
+
+.inside-img {
+    margin-right: 1%;
+}
 
 @media only screen and (max-width: 700px) {
     .full-screen {
