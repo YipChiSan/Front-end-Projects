@@ -385,19 +385,27 @@ nav a:hover {
         display: block;
     }
 
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about h2, #about p, #about img {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
     #p-with-img {
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
+    
+  
 
-    #p, #p-with-img, #good-at-bars {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    #p-with-img > img, #p-with-img > p {
-        width: 100%;
+    #p-with-img > img, #about p, .base-bar {
+        width: 90%;
+        display: block;
+        padding: 0;
     }
 
     #stat-section {
