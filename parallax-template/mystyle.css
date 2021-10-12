@@ -6,6 +6,10 @@ body div {
     margin:0;
 }
 
+#responsive-home-title {
+    display: none;
+}
+
 nav {
     background-color: white;
     width: 100%;
@@ -340,8 +344,10 @@ nav a:hover {
 
 #footer {
     background-color: darkgray;
-    height: 20vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
+  
 }
 
 #footer button {
@@ -370,4 +376,73 @@ nav a:hover {
         display: inline-block;
         float: right;
     }
+
+    #home-title {
+        display: none;
+    }
+
+    #responsive-home-title {
+        display: block;
+    }
+
+    #p-with-img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #p, #p-with-img, #good-at-bars {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #p-with-img > img, #p-with-img > p {
+        width: 100%;
+    }
+
+    #stat-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #stat-section {
+        flex-direction: column;
+    }
+
+    .stat {
+        width: 100%;
+    }
+
+    #showcase {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #showcase img {
+        width: 100%;
+    }
+
+    #contact-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-body img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact-form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footer {
+        margin-top: 150px;
+    }
+
+    
 } 
