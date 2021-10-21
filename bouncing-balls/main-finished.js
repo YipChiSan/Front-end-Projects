@@ -15,18 +15,18 @@ function random(min, max) {
 
 // define Shape constructor
 
-function Shape(x, y, velX, velY) {
+function Shape(x, y, velX, velY, exists) {
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
-    this.exists = true;
+    this.exists = exists;
 }
 
 // define Ball constructor
 
 function Ball(x, y, velX, velY, color, size) {
-    Shape.call(x, y, velX, velY);
+    Shape.call(this, x, y, velX, velY, true);
     this.color = color;
     this.size = size;
 }
@@ -41,7 +41,7 @@ Object.defineProperty(Ball.prototype, 'constructor', {
 // define EvilCircle constructor
 
 function EvilCircle(x, y) {
-    Shape.call(x, y, 20, 20);
+    Shape.call(this, x, y, 20, 20, true);
     this.color = 'white';
     this.size = 10;
 }
@@ -64,30 +64,51 @@ EvilCircle.prototype.draw = function () {
 
 EvilCircle.prototype.checkBounds = function () {
     if ((this.x + this.size) >= width) {
-        this.size -= 3;
-        this.size += 3;
-        this.x -= 2;
+        this.x -= this.size;
     }
 
     if ((this.x - this.size) <= 0) {
-        this.size -= 3;
-        this.size += 3;
-        this.x += 2;
+        this.x += this.size;
     }
 
     if ((this.y + this.size) >= height) {
-        this.size -= 3;
-        this.size += 3;
-        this.y -= 2;
+
+        this.y -= this.size;
     }
 
     if ((this.y - this.size) <= 0) {
-        this.size -= 3;
-        this.size += 3;
-        this.y += 2;
-    }
 
-    
+        this.y += this.size;
+    }
+}
+
+EvilCircle.prototype.setControls = function () {
+    let _this = this;
+    window.onkeydown = function (e) {
+        if (e.key === 'a') {
+            _this.x -= _this.velX;
+        } else if (e.key === 'd') {
+            _this.x += _this.velX;
+        } else if (e.key === 'w') {
+            _this.y -= _this.velY;
+        } else if (e.key === 's') {
+            _this.y += _this.velY;
+        }
+    }
+}
+
+EvilCircle.prototype.collisionDetect = function () {
+    for (let j = 0; j < balls.length; j++) {
+        if (balls[j].exists) {
+            const dx = this.x - balls[j].x;
+            const dy = this.y - balls[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.size + balls[j].size) {
+                balls[j].exists = false;
+            }
+        }
+    }
 }
 
 // define ball draw method
@@ -154,20 +175,33 @@ while (balls.length < 25) {
         'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')',
         size
     );
+
     balls.push(ball);
 }
 
 // define loop that keeps drawing the scene constantly
+const size = random(10, 20);
+let evilCircle = new EvilCircle(random(0 + size, width - size), random(0 + size, height - size));
+evilCircle.setControls();
 
 function loop() {
     ctx.fillStyle = 'rgba(0,0,0,0.25)';
     ctx.fillRect(0, 0, width, height);
 
     for (let i = 0; i < balls.length; i++) {
-        balls[i].draw();
-        balls[i].update();
-        balls[i].collisionDetect();
+        
+        if (balls[i].exists) {
+            
+            balls[i].draw();
+            balls[i].update();
+            balls[i].collisionDetect();
+        }
+
+
     }
+    evilCircle.draw();
+    evilCircle.checkBounds();
+    evilCircle.collisionDetect();
 
     requestAnimationFrame(loop);
 }
