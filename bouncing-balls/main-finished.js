@@ -15,11 +15,17 @@ function random(min, max) {
 
 // define Ball constructor
 
-function Ball(x, y, velX, velY, color, size) {
+function Shape(x, y, velX, velY) {
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
+    this.exists = true;
+}
+
+
+function Ball(x, y, velX, velY, color, size) {
+    Shape.call(x, y, velX, velY);
     this.color = color;
     this.size = size;
 }
@@ -60,7 +66,7 @@ Ball.prototype.update = function () {
 
 Ball.prototype.collisionDetect = function () {
     for (let j = 0; j < balls.length; j++) {
-        if (!(this === balls[j])) {
+        if (!(this === balls[j]) && balls[j].exists) {
             const dx = this.x - balls[j].x;
             const dy = this.y - balls[j].y;
             const distance = Math.sqrt(dx * dx + dy * dy);
