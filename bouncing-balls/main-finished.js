@@ -13,7 +13,7 @@ function random(min, max) {
     return num;
 }
 
-// define Ball constructor
+// define Shape constructor
 
 function Shape(x, y, velX, velY) {
     this.x = x;
@@ -23,12 +23,35 @@ function Shape(x, y, velX, velY) {
     this.exists = true;
 }
 
+// define Ball constructor
 
 function Ball(x, y, velX, velY, color, size) {
     Shape.call(x, y, velX, velY);
     this.color = color;
     this.size = size;
 }
+
+Ball.prototype = Object.create(Shape.prototype);
+Object.defineProperty(Ball.prototype, 'constructor', {
+    value: Ball,
+    enumerable: false, // so that it does not appear in 'for in' loop
+    writable: true
+});
+
+// define EvilCircle constructor
+
+function EvilCircle(x, y) {
+    Shape.call(x, y, 20, 20);
+    this.color = 'white';
+    this.size = 10;
+}
+
+EvilCircle.prototype = Object.create(EvilCircle.prototype);
+Object.defineProperty(EvilCircle.prototype, 'constructor', {
+    value: EvilCircle,
+    enumerable: false, // so that it does not appear in 'for in' loop
+    writable: true
+});
 
 // define ball draw method
 
@@ -38,6 +61,8 @@ Ball.prototype.draw = function () {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
 };
+
+
 
 // define ball update method
 
