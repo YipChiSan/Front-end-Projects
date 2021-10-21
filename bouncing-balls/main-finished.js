@@ -1,11 +1,13 @@
 // setup canvas
 
 const canvas = document.querySelector('canvas');
+const p = document.querySelector('p');
 const ctx = canvas.getContext('2d');
 
 const width = canvas.width = window.innerWidth;
 const height = canvas.height = window.innerHeight;
 
+let ballsNum = 0;
 // function to generate random number
 
 function random(min, max) {
@@ -106,6 +108,8 @@ EvilCircle.prototype.collisionDetect = function () {
 
             if (distance < this.size + balls[j].size) {
                 balls[j].exists = false;
+                ballsNum--;
+                p.textContent = "Balls Count: " + ballsNum;
             }
         }
     }
@@ -162,7 +166,7 @@ Ball.prototype.collisionDetect = function () {
 // define array to store balls and populate it
 
 let balls = [];
-
+p.textContent = "Balls Count: " + ballsNum;
 while (balls.length < 25) {
     const size = random(10, 20);
     let ball = new Ball(
@@ -175,7 +179,8 @@ while (balls.length < 25) {
         'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')',
         size
     );
-
+    ballsNum++;
+    p.textContent = "Balls Count: " + ballsNum;
     balls.push(ball);
 }
 
