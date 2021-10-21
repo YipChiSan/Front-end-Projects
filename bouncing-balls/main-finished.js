@@ -53,6 +53,43 @@ Object.defineProperty(EvilCircle.prototype, 'constructor', {
     writable: true
 });
 
+// define EvilCircle draw method
+EvilCircle.prototype.draw = function () {
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.stroke();
+}
+
+EvilCircle.prototype.checkBounds = function () {
+    if ((this.x + this.size) >= width) {
+        this.size -= 3;
+        this.size += 3;
+        this.x -= 2;
+    }
+
+    if ((this.x - this.size) <= 0) {
+        this.size -= 3;
+        this.size += 3;
+        this.x += 2;
+    }
+
+    if ((this.y + this.size) >= height) {
+        this.size -= 3;
+        this.size += 3;
+        this.y -= 2;
+    }
+
+    if ((this.y - this.size) <= 0) {
+        this.size -= 3;
+        this.size += 3;
+        this.y += 2;
+    }
+
+    
+}
+
 // define ball draw method
 
 Ball.prototype.draw = function () {
@@ -61,8 +98,6 @@ Ball.prototype.draw = function () {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
 };
-
-
 
 // define ball update method
 
